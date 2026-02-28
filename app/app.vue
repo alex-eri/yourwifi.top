@@ -29,8 +29,6 @@ useSeoMeta({
   <UApp>
     <UHeader>
       <template #left>
-
-        <TemplateMenu />
       </template>
 
       <template #right>
@@ -42,17 +40,16 @@ useSeoMeta({
       <NuxtPage />
     </UMain>
 
-    <USeparator  />
+    <USeparator />
 
     <UFooter>
       <template #left>
         <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
+          Eri • © {{ new Date().getFullYear() }}
         </p>
       </template>
 
       <template #right>
-
       </template>
     </UFooter>
   </UApp>
