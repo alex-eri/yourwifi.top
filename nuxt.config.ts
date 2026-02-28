@@ -1,15 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    '@nuxt/eslint',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxt/eslint'
   ],
-  nitro: {
-    preset: 'github_pages'
-  },
-  
+
   devtools: {
     enabled: true
+  },
+
+  nitro: {
+    preset: 'github_pages'
   },
 
   css: ['~/assets/css/main.css'],
@@ -23,7 +24,7 @@ export default defineNuxtConfig({
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never',
+        commaDangle: 'only-multiline',
         braceStyle: '1tbs'
       }
     }
