@@ -4,7 +4,10 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/ui'
   ],
-
+  nitro: {
+    preset: 'github_pages'
+  },
+  
   devtools: {
     enabled: true
   },
